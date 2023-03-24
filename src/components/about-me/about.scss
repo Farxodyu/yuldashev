@@ -1,0 +1,58 @@
+.about__component{
+  margin-top: 40px;
+  align-items: center;
+}
+.about__skills{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  @include media($small){
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.about__width{
+  margin-top: 10px !important;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  max-width: 192px;
+  width: 100%;
+}
+.fun{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @include media($large){
+    justify-content: center;
+  }
+  &__facts{
+    &__block{
+      display: flex;
+    }
+    &__text{
+      margin-left: 16px;
+      margin-bottom: 16px;
+      padding: 8px;
+      border: 1px solid #fff;
+    }
+  }
+  &__geometry{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    @include media($large){
+      margin-top: 50px;
+    }
+    &__img{
+      height: 100px;
+      &-logo{
+        margin-top: 40px;
+        margin-left: 10px;
+      }
+    }
+  }
+}

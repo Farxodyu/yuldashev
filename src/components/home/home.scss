@@ -1,0 +1,450 @@
+.home {
+  padding-top: 154px;
+  position: relative;
+  padding-bottom: 131px;
+
+  &__b-1 {
+    @include media($small) {
+      align-items: center;
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 100px;
+    }
+
+  }
+
+  &__b-2 {
+    @include media($medium) {
+
+    }
+  }
+
+  &__h {
+    font-family: 'FiraCodeSemiBold', sans-serif;
+    font-size: 32px;
+    line-height: 42px;
+    margin-bottom: 32px;
+
+    span {
+      color: $hashTagActive;
+    }
+  }
+
+  &__descr {
+    color: $nav-link-color;
+    line-height: 25px;
+    margin-bottom: 24px;
+  }
+
+  &__contact {
+    width: 100%;
+    line-height: 21px;
+    color: $link-color;
+    font-family: "FiraCodeMedium", sans-serif;
+    display: flex;
+    justify-content: center;
+    &_info{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+  }
+
+  &__btn {
+    text-align: center !important;
+    display: inline;
+    max-width: 190px;
+    width: 100%;
+    border: 1px solid $hashTagActive;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    padding: 8px 16px;
+    margin-top: 27px;
+    @include media($small) {
+      padding: 8px 16px;
+    }
+  }
+
+  /**********************/
+  /*BLOCK 2*/
+
+  &__preview {
+    position: relative;
+    height: 386px;
+    max-width: 648px;
+    width: 100%;
+    margin: auto;
+  }
+
+  &__avatar {
+    position: absolute;
+    max-width: 402px;
+    object-fit: cover;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 999;
+  }
+
+  &__logo {
+    position: absolute;
+    max-width: 200px;
+    width: 100%;
+    object-fit: contain;
+    left: 50px;
+    top: 68.75px;
+  }
+
+  &__dots {
+    position: absolute;
+    right: 90px;
+    top: 261px;
+    z-index: 100;
+  }
+
+  &__working {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-border {
+      border: 1px solid $nav-link-color;
+      padding: 8px 70px 8px 8px;
+      display: flex;
+      align-items: center;
+      @include media($small) {
+        padding-right: 40px;
+      }
+    }
+
+    &-color {
+      width: 16px;
+      height: 16px;
+      background: $hashTagActive;
+      border: 1px solid $hashTagActive;
+      margin-right: 10px;
+    }
+
+    &-description {
+      font-family: "FiraCodeMedium", sans-serif;
+      color: $nav-link-color;
+
+      span {
+        color: $link-color;
+      }
+    }
+  }
+
+  &__dr-who {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 112px auto;
+    max-width: 812px;
+    width: 100%;
+
+    &-qoutes {
+      font-family: "FiraCodeMedium", sans-serif;
+      font-size: 24px;
+      line-height: 31px;
+      border: 1px solid $quoteColor;
+      position: relative;
+      margin-bottom: 0 !important;
+      align-self: center;
+      padding: 32px;
+
+      &-left {
+        position: absolute;
+        top: -1px;
+        left: 17px;
+        display: flex;
+        justify-content: center;
+        height: 21px;
+        width: 41px;
+        font-size: 51px;
+        background: $container;
+        color: $quoteColor;
+      }
+
+      &-right {
+        position: absolute;
+        bottom: -20px;
+        right: 17px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        height: 21px;
+        width: 41px;
+        font-size: 51px;
+        background: $container;
+        color: $quoteColor;
+      }
+    }
+
+    &-autor {
+      padding: 16px;
+      align-self: center;
+      font-size: 24px;
+      border-top: none;
+      border-left: 1px solid $quoteColor;
+      border-bottom: 1px solid $quoteColor;
+      border-right: 1px solid $quoteColor;
+    }
+  }
+}
+.projects {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+  margin-top: 150px;
+  @include media($small) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__view-line {
+    &-view {
+      @include media($small) {
+        margin-top: 30px;
+      }
+    }
+  }
+
+  &__dots {
+    position: absolute;
+    top: 80px;
+    left: -15%;
+  }
+
+  &__tit-line {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include media($small) {
+      flex-direction: column;
+    }
+
+    &-title {
+      span{
+        color: $hashTagActive;
+        font-size: 32px;
+      }
+      @include media($small) {
+        margin-bottom: 30px;
+      }
+    }
+
+    &-line {
+      height: 1px;
+      width: 411px;
+      position: absolute;
+      left: 100%;
+      margin-left: 16px;
+      background: $content-line;
+      @include media($medium) {
+        width: 300px
+      }
+      @include media($small) {
+        position: static;
+      }
+      @include media($bigPhone) {
+        width: 250px;
+      }
+    }
+  }
+}
+
+.problocks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  row-gap: 46px;
+  @include media(1200px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include media($medium) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.social{
+  position: absolute;
+  top: 0;
+  left: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__line{
+    height: 191px;
+    width: 1px;
+    background: $quoteColor;
+  }
+}
+.skills{
+  display: grid;
+  grid-template-columns:40% 60%;
+  @include media($medium){
+    grid-template-columns: repeat(1, 1fr);
+  }
+  &__geometry{
+    position: relative;
+    @include media($medium){
+      display: none;
+    }
+    &-dots-1{
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+    &-dots-2{
+      position: absolute;
+      top: 80px;
+      right: 168px;
+    }
+    &-squad-big{
+      position: absolute;
+      top: -30px;
+      right: 100px;
+    }
+    &-squad-small{
+      position: absolute;
+      bottom: 66px;
+      right: 59px;
+    }
+    &-logo{
+      position: absolute;
+      left: 100px;
+      bottom: -30px;
+    }
+  }
+  &__main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    @include media($extraSmall){
+      grid-template-columns: repeat(1, 1fr);
+      max-width: 250px;
+      width: 100%;
+      margin: 50px auto;
+
+    }
+  }
+  &__df{
+    display: flex;
+    flex-direction: column;
+    &-block{
+      border: 1px solid $quoteColor;
+      &-title{
+        padding: 8px;
+        border-bottom: 1px solid $quoteColor;
+      }
+      &-description{
+        padding:  8px 8px;
+        color: $nav-link-color;
+        line-height: 26px;
+      }
+      &:nth-child(even){
+        margin-top: 16px;
+      }
+    }
+  }
+}
+.about-me{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  @include media($medium){
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+  &-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  &-img{
+    max-width: 345px;
+    width: 100%;
+    object-fit: contain;
+    z-index: 10;
+  }
+  &-descr{
+    font-size: 16px;
+    line-height: 21px;
+    color: $nav-link-color;
+  }
+  &-block{
+    max-width: 515px;
+    width: 100%;
+  }
+  &__dots-{
+    &1{
+      max-width: 200px;
+      width: 100%;
+    }
+    &2{
+      max-width: 150px;
+      width: 100%;
+      z-index: 11;
+      top: 300px;
+    }
+  }
+}
+.contacts_me{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: flex-end;
+  @include media($small){
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+  &__text{
+    max-width: 505px;
+    width: 100%;
+    font-family: 'FiraCodeMedium', sans-serif;
+    font-size: 16px;
+    line-height: 21px;
+    color: #ABB2BF;
+  }
+}
+.contacts_me__block{
+  border: 1px solid $link-color;
+  margin-right: 0;
+  width: 200px;
+  @include media($small) {
+    margin-top: 50px;
+  }
+  &__message{
+    font-size: 16px;
+    border-bottom: 1px solid #FFFFFF;
+    padding-top: 16px;
+    padding-bottom: 10px;
+  }
+}
+.social__media{
+  margin-top: 22px;
+  display: grid;
+  justify-content: center;
+  padding-bottom: 10px;
+  &__icon{
+    height: 20px;
+  }
+  &__text{
+    color: #ABB2BF;
+    font-size: 16px;
+    &:hover{
+      color: rgb(206, 168, 102);
+    }
+  }
+}
+.connection{
+  display: flex;
+  align-items: center;
+  justify-items: flex-end;
+  padding-bottom: 10px;
+}

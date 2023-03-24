@@ -1,0 +1,24 @@
+.contacts_me__main{
+  display: flex;
+  justify-content: space-around;
+  @include media($small){
+    flex-wrap: wrap;
+  }
+  @include media($large){
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
+.massage{
+  display: flex;
+  align-items: baseline;
+  @include media($small){
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  &_margins{
+    margin-left: 10px;
+  }
+}
+.contacts-top{
+  margin-top: 46px;
+}

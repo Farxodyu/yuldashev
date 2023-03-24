@@ -1,0 +1,92 @@
+nav{
+  position: relative;
+}
+.navbar {
+  padding: 0 0 10px 0 !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1000;
+
+}
+
+.nav_padding {
+  padding-top: 32px;
+}
+
+.header__link {
+  font-family: FiraCodeMedium, sans-serif;
+  font-size: 16px;
+
+  span {
+    color: $hashTagDisable;
+  }
+
+  a {
+    padding-left: 32px !important;
+    padding-right: 0 !important;
+    color: $nav-link-color;
+  }
+}
+
+.header__navigation {
+  display: flex;
+  @include media($medium) {
+    align-items: flex-start;
+    position: absolute;
+    top: 100%!important;
+    right: 0;
+    z-index: 9999;
+    width: 100%;
+    min-height: 640px;
+    background: $container;
+    overflow: hidden;
+    transform: translateX(100%);
+    display: none;
+  }
+
+}
+
+.active {
+  color: #FFF !important;
+
+  span {
+    color: $hashTagActive !important;
+  }
+}
+
+ .main__navbar {
+   @include media($medium){
+     margin-top: 47px;
+   }
+
+ }
+ .header__link{
+   @include media($medium){
+     font-size: 32px;
+   }
+ }
+.main__logo{
+  display: flex;
+  align-items: center;
+  @include media($medium){
+    margin-left: 12px;
+  }
+}
+ .main__icon-size{
+   font-size: 24px;
+   height: 24px;
+ }
+.networks{
+  display: flex;
+  flex-direction: column;
+  margin-top: 14px;
+  &__icon{
+    margin-top: 14px;
+    font-size: 22px;
+    height: 22px;
+    color: $quoteColor;
+  }
+}
