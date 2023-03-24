@@ -35,8 +35,7 @@ const Home = () => {
               />
             </h1>
             <p className="home__descr">
-              I craft responsive websites where technologies meet creativity (сайт находится в разработке и мржет быть
-              не адаптивен)
+              I craft responsive websites where technologies meet creativity
             </p>
            <div className="home__contact_info">
                <button className="btn home__btn"><Link to="/contacts" className="home__contact">
