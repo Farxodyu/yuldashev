@@ -1,6 +1,5 @@
 import React from "react";
 import telegram from "../home/img/icons8-telegram-app-32.png";
-import instagram_icon from "../home/img/icons8-instagram-32.png";
  const Contacts =()=> {
     return (
         <>
@@ -31,13 +30,9 @@ import instagram_icon from "../home/img/icons8-instagram-32.png";
                                    Message me here
                                </p>
                                <div className="social__media">
-                                   <a href='#' className="connection">
+                                   <a href='https://t.me/SpaseDef' className="connection">
                                        <img src={telegram} alt="#" className={'.social__media__icon'}/>
                                        <p className="social__media__text">Telegram</p>
-                                   </a>
-                                   <a href='#' className={'connection'}>
-                                       <img src={instagram_icon} alt="Insta" className={'.social__media__icon'}/>
-                                       <p className="social__media__text">Instagram</p>
                                    </a>
                                </div>
                            </div>
