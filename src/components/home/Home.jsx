@@ -139,10 +139,10 @@ const Home = () => {
               </div>
               <div className="skills__df-block">
                 <p className="skills__df-block-title">
-                  Frameworks
+                  Frameworks and library
                 </p>
                 <p className="skills__df-block-description">
-                  React
+                  React Vue
                 </p>
               </div>
             </div>

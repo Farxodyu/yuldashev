@@ -4,6 +4,7 @@ import portenImg from "../../projects_img/portenImg.png";
 import mayakImg from "../../projects_img/mayakImg.png";
 import furImg from "../../projects_img/furniture.png";
 import pigImg from "../../projects_img/pigImg.png";
+import notesImg from "../../projects_img/notesImg.png";
 import React, {useState} from "react";
 import Projects from "../home/Projects";
 
@@ -56,6 +57,14 @@ export const WorksPropsComponent = () => {
             title: "Pig Game (Desktop)",
             server: "servers hosting",
             link: "https://farxodyu.github.io/pigGame/"
+        },
+        {
+            id: 7,
+            image: notesImg ,
+            skills: "HTML CSS Vue 3",
+            title: "Notes",
+            server: "servers hosting",
+            link: "https://farxodyu.github.io/notes-vue/"
         },
     ]
 
